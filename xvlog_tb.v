@@ -86,20 +86,20 @@ always @(state) begin
 end    
 
 always @(*) begin
-	$display($time, "=> checkpoint 1");
+	$display("=> checkpoint 1");
 	next_state = 1'd0;
-	$display($time, "=> checkpoint 2");
+	$display("=> checkpoint 2");
 	next_state = state;
-	$display($time, "=> checkpoint 3");
+	$display("=> checkpoint 3");
 	case (state)
 		1'd1: begin
-	        $display($time, "=> checkpoint 4");
+	        $display("=> checkpoint 4");
 			next_state = 1'd0;
 		end
 		default: begin
-	        $display($time, "=> checkpoint 5");
+	        $display("=> checkpoint 5");
 			if ((mgmtsoc_wishbone_cyc & mgmtsoc_wishbone_stb)) begin
-	            $display($time, "=> checkpoint 6");
+	            $display("=> checkpoint 6");
 				next_state = 1'd1;
 			end
 		end
