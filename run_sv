@@ -1,0 +1,3 @@
+xvlog -sv xvlog_tb.v
+xelab -top xvlog_tb -snapshot xvlog_tb_elab
+xsim xvlog_tb_elab -R
