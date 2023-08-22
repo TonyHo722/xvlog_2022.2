@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# xsim v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Aug 22 16:09:19 2023
+# Process ID: 1049189
+# Current directory: /home/tonyho/workspace/verilog_study/xvlog_2022.2
+# Command line: xsim -mode tcl -source {xsim.dir/xvlog_tb_elab/xsim_script.tcl}
+# Log file: /home/tonyho/workspace/verilog_study/xvlog_2022.2/xsim.log
+# Journal file: /home/tonyho/workspace/verilog_study/xvlog_2022.2/xsim.jou
+# Running On: ubuntu5, OS: Linux, CPU Frequency: 2200.000 MHz, CPU Physical cores: 32, Host memory: 67324 MB
+#-----------------------------------------------------------
+source xsim.dir/xvlog_tb_elab/xsim_script.tcl
+# xsim {xvlog_tb_elab} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+                3713=> dump mgmtsoc_wishbone_cyc=1
+=> checkpoint 1
+=> checkpoint 2
+=> checkpoint 3
+=> checkpoint 5
+=> checkpoint 6
+                3713=> dump mgmtsoc_wishbone_stb=1
+                3713=> dump next_state=1
+                3738=> dump mgmtsoc_wishbone_cyc=0
+=> checkpoint 1
+=> checkpoint 2
+=> checkpoint 3
+=> checkpoint 4
+                3738=> dump mgmtsoc_wishbone_stb=0
+                3738=> dump state=1
+                3738=> dump next_state=0
+                3763=> dump mgmtsoc_wishbone_cyc=1
+=> checkpoint 1
+=> checkpoint 2
+=> checkpoint 3
+=> checkpoint 5
+=> checkpoint 6
+                3763=> dump mgmtsoc_wishbone_stb=1
+                3763=> dump state=0
+                3763=> dump next_state=1
+                3788=> dump mgmtsoc_wishbone_cyc=0
+=> checkpoint 1
+=> checkpoint 2
+=> checkpoint 3
+=> checkpoint 4
+                3788=> dump mgmtsoc_wishbone_stb=0
+                3788=> dump state=1
+                3788=> dump next_state=0
+                3813=> dump mgmtsoc_wishbone_cyc=1
+=> checkpoint 1
+=> checkpoint 2
+=> checkpoint 3
+=> checkpoint 5
+=> checkpoint 6
+                3813=> dump mgmtsoc_wishbone_stb=1
+                3813=> dump state=0
+                3813=> dump next_state=1
+$finish called at time : 3837500 ps : File "/home/tonyho/workspace/verilog_study/xvlog_2022.2/xvlog_tb.v" Line 68
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Aug 22 16:10:06 2023...
