@@ -86,7 +86,7 @@ always @(state) begin
 end    
 
 always @(*) begin
-	next_state = 1'd0;
+	//tony_debug next_state = 1'd0;
 	next_state = state;
 	case (state)
 		1'd1: begin
